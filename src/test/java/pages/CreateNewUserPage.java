@@ -42,8 +42,8 @@ public class CreateNewUserPage extends BasePage {
     }
 
     public void clickNewUser() {
-
-        newUserElement.click();
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("arguments[0].click();", newUserElement);
     }
 
 

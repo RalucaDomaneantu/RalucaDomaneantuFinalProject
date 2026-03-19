@@ -1,12 +1,10 @@
-package tests;
+package testsFE;
 
 import models.UserModel;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 import pages.CreateNewUserPage;
 import sharedData.SharedData;
 import utils.LogUtility;
-import java.time.Duration;
 
 public class CreateNewUserTest extends SharedData {
 

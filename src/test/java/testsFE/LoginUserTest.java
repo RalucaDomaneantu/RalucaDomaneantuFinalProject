@@ -1,16 +1,10 @@
-package tests;
+package testsFE;
 
 import models.UserModel;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import pages.LoginUserPage;
 import sharedData.SharedData;
 import utils.LogUtility;
-import java.time.Duration;
 
 
 public class LoginUserTest extends SharedData {
