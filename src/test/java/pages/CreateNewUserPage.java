@@ -42,10 +42,12 @@ public class CreateNewUserPage extends BasePage {
     }
 
     public void clickNewUser() {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.visibilityOf(newUserElement));
+
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("arguments[0].click();", newUserElement);
     }
-
 
     public void createUserProcess(UserModel testData) {
         firstNameElement.sendKeys(testData.getFirstNameValue());
@@ -55,7 +57,8 @@ public class CreateNewUserPage extends BasePage {
     }
 
     public void userRegister() {
-        registerButtonElement.click();
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("arguments[0].click();", registerButtonElement);
     }
 }
 

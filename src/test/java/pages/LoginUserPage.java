@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class LoginUserPage extends BasePage{
+public class LoginUserPage extends BasePage {
 
 
     @FindBy(id = "login")
@@ -25,9 +25,10 @@ public class LoginUserPage extends BasePage{
     public void clickLogin() {
         loginButtonElement.click();
     }
-  public void userLogin(UserModel testdata){
+
+    public void userLogin(UserModel testdata) {
         userNameElement.sendKeys(testdata.getUserNameValue());
         passwordElement.sendKeys(testdata.getPasswordValue());
-  }
+    }
 }
 

@@ -11,9 +11,9 @@ public class CreateNewUserTest extends SharedData {
     @Test
         public void createNewUserTest () {
 
-         UserModel testData = new UserModel("src/test/resources/UserData.json");
+            UserModel testData = new UserModel("src/test/resources/UserData.json");
 
-           CreateNewUserPage createNewUserPage = new CreateNewUserPage(getDriver());
+            CreateNewUserPage createNewUserPage = new CreateNewUserPage(getDriver());
 
             createNewUserPage.clickLogin();
             LogUtility.infoLog("The user clicks on login button");
@@ -26,7 +26,6 @@ public class CreateNewUserTest extends SharedData {
 
             createNewUserPage.userRegister();
             LogUtility.infoLog("The user clicks on register button");
-
 
         }
     }
